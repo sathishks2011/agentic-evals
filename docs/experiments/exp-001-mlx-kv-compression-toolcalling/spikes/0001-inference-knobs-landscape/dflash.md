@@ -43,14 +43,14 @@ Of the four spike techniques, this is the only one with both **MLX support** *an
 
 ⚠ **The README publishes no speedup numbers.** Referenced benchmarks (GSM8K, MATH-500, HumanEval, MBPP, MT-Bench) are quality benchmarks for the target model, not DFlash throughput. We'd be measuring DFlash speedup as fresh data — a feature (novel result) and a risk (no oracle to validate harness against).
 
-## iris-relevance
+## IRIS-relevance
 
-**High and direct.** Of the four techniques, this is the most plausibly adoptable by iris:
+**High and direct.** Of the four techniques, this is the most plausibly adoptable by IRIS:
 - MLX backend = user's Apple Silicon
-- Draft models published for Qwen 3.5 / 3.6 — same family as iris's Tier 2 / Tier 3
-- Speculative decoding is framework-level, doesn't touch iris's agentic core
+- Draft models published for Qwen 3.5 / 3.6 — same family as IRIS's Tier 2 / Tier 3
+- Speculative decoding is framework-level, doesn't touch IRIS's agentic core
 
-A wedge comparing "Qwen 3.5 on MLX baseline" vs "Qwen 3.5 on MLX + DFlash drafter" for iris's tool-calling tests would produce numbers the OSS community doesn't have yet.
+A wedge comparing "Qwen 3.5 on MLX baseline" vs "Qwen 3.5 on MLX + DFlash drafter" for IRIS's tool-calling tests would produce numbers the OSS community doesn't have yet.
 
 ## Blockers
 

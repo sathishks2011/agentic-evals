@@ -26,7 +26,7 @@ An auxiliary training module that lets a transformer predict **multiple future t
 | **Ollama** | Inherits llama.cpp limitations — no MTP |
 | **MLX** | No native MTP support known yet |
 
-For OSS local-first agents like iris, this is the friction: Ollama / llama.cpp / MLX all currently miss MTP.
+For OSS local-first agents like IRIS, this is the friction: Ollama / llama.cpp / MLX all currently miss MTP.
 
 ## Hardware
 
@@ -39,13 +39,13 @@ Hardware-agnostic in principle; practical support follows the framework matrix. 
 - **Quality preservation** — lossless by construction, but verify
 - **End-to-end agentic-loop latency** — each tool-call round-trip benefits proportionally
 
-## iris-relevance
+## IRIS-relevance
 
-**Medium, indirect.** None of iris's current Tier 1 / 2 / 3 models (`llama3.2:3b`, `qwen2.5-coder:7b`, `qwen3.6:27b`) ship with MTP heads. To exercise MTP for iris, we'd need:
-1. Adding a DeepSeek-V3 / DeepSeek-R1 model to iris's tier mix
+**Medium, indirect.** None of IRIS's current Tier 1 / 2 / 3 models (`llama3.2:3b`, `qwen2.5-coder:7b`, `qwen3.6:27b`) ship with MTP heads. To exercise MTP for IRIS, we'd need:
+1. Adding a DeepSeek-V3 / DeepSeek-R1 model to IRIS's tier mix
 2. Switching that tier to vLLM or SGLang
 
-That's a deployment-shape ask. More realistic posture: benchmark MTP as a **reference point** ("here's the cutting-edge speedup ceiling") rather than something iris adopts directly.
+That's a deployment-shape ask. More realistic posture: benchmark MTP as a **reference point** ("here's the cutting-edge speedup ceiling") rather than something IRIS adopts directly.
 
 ## Blockers
 

@@ -5,7 +5,7 @@ arXiv:2504.19874).
 
 This is a *reference / validation* implementation, not a production kernel.
 Its job is to let us empirically check the paper's claims and to act as the
-algorithmic spec we can later port to MLX/Metal for the `iris` local agent.
+algorithmic spec we can later port to MLX/Metal for the `IRIS` local agent.
 
 Pipeline (per head vector x in R^d):
   1. Separate norm:        s = ||x||,  u = x / s        (store s in fp16)

@@ -6,7 +6,7 @@ Free, local, secure AI is powerful — and the open-source ecosystem around it i
 
 Every finding here ships with the exact code that produced it. Clone it, run one command, reproduce the result on your own hardware. **Proof, or it didn't happen.**
 
-> Built by Sathish, who's building [IRIS](https://github.com/sathishks2011/project-iris) — a local-first agent — on foundations tested here. A companion blog series is in the works.
+> Built by Sathish, who's building a local-first AI assistant — coming soon — on the foundations tested here. A companion blog series is in the works.
 
 ## What's inside
 
@@ -23,7 +23,7 @@ Every finding here ships with the exact code that produced it. Clone it, run one
 Requires Apple Silicon (current experiments use Apple's MLX), Python 3.12, and [uv](https://docs.astral.sh/uv/).
 
 ```bash
-git clone https://github.com/sathishks2011/agentic-evals
+git clone https://github.com/sathishksoman/agentic-evals
 cd agentic-evals
 uv sync
 uv run pre-commit install   # optional, for contributors

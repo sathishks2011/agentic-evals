@@ -79,7 +79,7 @@ My `_grade()` function (in `buffer_cliff.py`) classifies the perfect-JSON output
 - Narrowing the cliff to single-token precision (between buf 512 and 1024 for this prompt length)
 - Fixing the grader bug (acknowledged inline)
 - Memory-usage delta at long context (not measured — peak unified mem dominated by 7B-4bit weights)
-- iris-via-API path (still hitting raw model)
+- IRIS-via-API path (still hitting raw model)
 
 ## Conclusion
 

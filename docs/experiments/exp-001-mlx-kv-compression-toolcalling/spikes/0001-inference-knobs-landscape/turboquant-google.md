@@ -28,7 +28,7 @@ vLLM / NVIDIA path: see `turboquant-academic.md`.
 
 ## Hardware
 
-- **Apple Silicon (M-series):** yes via MLX ports above — iris-relevant path.
+- **Apple Silicon (M-series):** yes via MLX ports above — IRIS-relevant path.
 - **NVIDIA CUDA:** see academic page.
 - **AMD:** no known support.
 
@@ -39,12 +39,12 @@ vLLM / NVIDIA path: see `turboquant-academic.md`.
 - **Quality:** attention-score cosine similarity vs FP16; downstream task quality (NIAH, agentic)
 - **Max context** before OOM at given hardware
 
-## iris-relevance
+## IRIS-relevance
 
-**High.** iris runs Ollama on Apple Silicon — no TurboQuant today. Benchmarking iris's Tier 2 (`qwen2.5-coder:7b`) or Tier 3 (`qwen3.6:27b`) on MLX-with-TurboQuant vs current Ollama yields:
+**High.** IRIS runs Ollama on Apple Silicon — no TurboQuant today. Benchmarking IRIS's Tier 2 (`qwen2.5-coder:7b`) or Tier 3 (`qwen3.6:27b`) on MLX-with-TurboQuant vs current Ollama yields:
 - Memory headroom for longer context windows
 - Quality preservation under aggressive KV compression
-- Decision input: does iris add MLX+TurboQuant as a long-context deployment option?
+- Decision input: does IRIS add MLX+TurboQuant as a long-context deployment option?
 
 ## Blockers (updated)
 

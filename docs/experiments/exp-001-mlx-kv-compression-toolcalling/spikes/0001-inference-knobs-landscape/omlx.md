@@ -2,7 +2,7 @@
 
 **Status:** Researched 2026-05-26. No code/installs/measurements.
 
-⚠ **Naming clarification:** User initially listed oMLX in the same breath as "TurboQuant for MLX." **oMLX is not TurboQuant.** It is a separate inference framework / runtime for Apple Silicon. Tracked here because it is a credible candidate to add alongside `mlx-lm` and Ollama as the iris-side framework matrix.
+⚠ **Naming clarification:** User initially listed oMLX in the same breath as "TurboQuant for MLX." **oMLX is not TurboQuant.** It is a separate inference framework / runtime for Apple Silicon. Tracked here because it is a credible candidate to add alongside `mlx-lm` and Ollama as the IRIS-side framework matrix.
 
 ## What it really is
 
@@ -35,14 +35,14 @@ Apple Silicon only (M1 / M2 / M3 / M4). macOS 15.0+ (Sequoia). Python 3.10+.
 - No NVIDIA / AMD / Intel support.
 - Does not include benchmarking tooling.
 
-## iris-relevance
+## IRIS-relevance
 
-**High as a candidate framework.** iris's stack today is Ollama + LM Studio (+ MLX optionally for Gemma). oMLX is a credible third Mac path:
-- **API-compatible with iris's existing client** (OpenAI `/v1` shape) — drop-in test
+**High as a candidate framework.** IRIS's stack today is Ollama + LM Studio (+ MLX optionally for Gemma). oMLX is a credible third Mac path:
+- **API-compatible with IRIS's existing client** (OpenAI `/v1` shape) — drop-in test
 - **Better long-context behavior** than naive MLX-LM (tiered KV)
-- **Continuous batching** matters if iris ever multiplexes user sessions
+- **Continuous batching** matters if IRIS ever multiplexes user sessions
 
-For the benchmark: **oMLX is a candidate to add to the framework axis** alongside mlx-lm. Doing so would let us answer: "for the same model + quant, does running on oMLX beat running on Ollama on Apple Silicon?" That's directly iris-actionable.
+For the benchmark: **oMLX is a candidate to add to the framework axis** alongside mlx-lm. Doing so would let us answer: "for the same model + quant, does running on oMLX beat running on Ollama on Apple Silicon?" That's directly IRIS-actionable.
 
 ## Blockers
 

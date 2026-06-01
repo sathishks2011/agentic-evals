@@ -1,4 +1,4 @@
-# TurboQuant → `iris` integration brief
+# TurboQuant → `IRIS` integration brief
 
 ## What this POC proves (and doesn't)
 - **Proves**: the compression math is exact (5.12x @ d=128, 5.22x @ d=256 at
@@ -9,12 +9,12 @@
   perplexity on real text. This is the algorithm spec + a quality harness, not
   an inference engine.
 
-## Where it lives in iris
+## Where it lives in IRIS
 TurboQuant operates **inside the inference runtime**, not in your TS/Nest layer.
-The KV cache never reaches Node. So iris's job is orchestration + policy:
+The KV cache never reaches Node. So IRIS's job is orchestration + policy:
 
 ```
-iris (Next.js / NestJS)              inference runtime (the only place KV lives)
+IRIS (Next.js / NestJS)              inference runtime (the only place KV lives)
   ├─ model registry / selector  ──▶  mlx-lm fork  OR  llama.cpp fork
   ├─ kv-quant policy (k_bits,        └─ TurboQuant KV cache  ◀── port of this POC
   │   v_bits, protected layers)
@@ -34,7 +34,7 @@ recover precision). Expose it as a per-model config, not a global flag.
 2. **Port the codebook + rotation** from `turboquant.py` to a fused Metal kernel
    (randomized Hadamard transform instead of the dense QR matrix here — O(d log d)).
 3. **Wire the policy object** into your model registry and surface ctx-length
-   gains in iris telemetry (the real UX win is longer context, not a smaller model).
+   gains in IRIS telemetry (the real UX win is longer context, not a smaller model).
 4. **Validate on YOUR workload** with a real needle-in-a-haystack + a perplexity
    check before trusting any "zero loss" claim.
 
@@ -44,7 +44,7 @@ recover precision). Expose it as a per-model config, not a global flag.
   model and sees every token. Pin commits, build from source, review the Metal/
   CUDA kernel, and sandbox the runtime. Treat it as untrusted until audited.
 - **Privacy upside**: this is purely local memory compression — no data leaves
-  the device, fully consistent with iris's privacy-first thesis. It strengthens
+  the device, fully consistent with IRIS's privacy-first thesis. It strengthens
   the local-only story (longer context without cloud offload).
 - **Failure mode to monitor**: aggressive V/K bits silently degrade retrieval
   rather than crashing. Keep the needle metric in CI so a quality regression in

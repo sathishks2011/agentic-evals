@@ -98,7 +98,7 @@ yzamari's `_flush()` does `chunk_size = self.flush_batch_size or buffer_size` �
 - **Statistical significance** — n=1 per condition. v0 needs ≥3.
 - **rachittshah/mlx-turboquant reinstall to confirm we're testing yzamari** — verified via inspection of `mlx_turboquant.__file__` indirectly; trust the install log.
 - **`flush_batch_size` parameter sweep** — yzamari has this knob too; not exercised.
-- **iris-via-API test** — still hitting the raw model.
+- **IRIS-via-API test** — still hitting the raw model.
 
 ## Conclusion
 

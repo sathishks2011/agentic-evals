@@ -46,11 +46,11 @@ Use as a cross-check on quality claims. Its honest disclosure ("needle retrieval
 ### Not chosen
 - matt-k-wong — cites a different arXiv (2406.04723); needs verification of which TurboQuant variant it implements before trusting comparisons.
 
-## Iris tool to test (Task #10)
+## IRIS tool to test (Task #10)
 
 Selected: **`web_search`** from `src/iris/tools/web_search.py`.
 
-Rationale: simplest signature in iris's tool catalog (`query: str, time_range: str | None`); clear semantic expectations; the model has a "right answer" that's checkable.
+Rationale: simplest signature in IRIS's tool catalog (`query: str, time_range: str | None`); clear semantic expectations; the model has a "right answer" that's checkable.
 
 ### Tool schema (what a model must emit)
 

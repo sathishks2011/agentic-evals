@@ -43,13 +43,13 @@ Other lineages worth tracking:
 This is the key difference from inference-knob techniques. We measure **the distilled model itself**, like any other model:
 - Quality across capability categories (the central agentic-capabilities axis of the benchmark)
 - Latency / memory at given hardware + quantization
-- Direct comparisons like: *DeepSeek-R1-Distill-Qwen-7B vs base Qwen-2.5-7B vs DeepSeek-R1-Distill-Llama-8B* on iris's tool-calling tests, at Apple Silicon, Q5_K_M.
+- Direct comparisons like: *DeepSeek-R1-Distill-Qwen-7B vs base Qwen-2.5-7B vs DeepSeek-R1-Distill-Llama-8B* on IRIS's tool-calling tests, at Apple Silicon, Q5_K_M.
 
 This maps **naturally onto the benchmark's main axis** — "which model is best at capability X" — without needing a separate harness.
 
-## iris-relevance
+## IRIS-relevance
 
-**High and natural.** iris's Tier 2 question ("what's the best 7-9B model for code/tool-calling on local hardware") is exactly the question DeepSeek-R1-Distill-Qwen-7B is designed to compete on. Including 2-3 distilled models in the first wedge alongside vanilla Qwen-2.5-7B costs almost nothing extra — they all run through the same harness.
+**High and natural.** IRIS's Tier 2 question ("what's the best 7-9B model for code/tool-calling on local hardware") is exactly the question DeepSeek-R1-Distill-Qwen-7B is designed to compete on. Including 2-3 distilled models in the first wedge alongside vanilla Qwen-2.5-7B costs almost nothing extra — they all run through the same harness.
 
 ## Blockers
 

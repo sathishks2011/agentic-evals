@@ -1,6 +1,6 @@
 """
 benchmark.py — Empirically validate the TurboQuant claims that matter for a
-local agent like `iris`:
+local agent like `IRIS`:
 
   Claim A: ~quality-neutral at 3.5 bits/coord, marginal degradation at 2.5.
   Claim B: ~5x KV-cache compression vs fp16.

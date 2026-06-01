@@ -87,7 +87,7 @@ cache = make_turboquant_cache(
 - Below cliff doesn't gracefully degrade — it **collapses into garbage tokens**. JSON parser will fail loudly — good for detectability.
 - Long-context FP baseline fails (model gets distracted by filler). TQ at ratio ≥ 0.55 actually helps.
 
-**Best for:** iris Tier 1 — intent classification, routing, fast simple tool calls. Low-latency path. ~0.35s short prompts, ~1.93s long.
+**Best for:** IRIS Tier 1 — intent classification, routing, fast simple tool calls. Low-latency path. ~0.35s short prompts, ~1.93s long.
 
 ---
 

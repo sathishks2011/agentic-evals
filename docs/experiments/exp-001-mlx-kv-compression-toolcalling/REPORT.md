@@ -55,7 +55,7 @@ The v0 misread came from sampling only ratio=0.5 (right on the cliff edge) and r
 ### 2. Below the cliff: models hallucinate plausible-sounding answers (spike 0008)
 Qwen-2.5-7B at buf=973 (ratio=0.495) invented `41.3°F · 58% humidity` instead of calling the tool. **The cliff is not "compression breaks output"; it's "compression breaks the *agent contract* but the *language model* still talks fluently."** This is the more dangerous failure mode for agentic systems — a user can't tell from the prose alone that the tool wasn't called.
 
-This is the **single most important finding for iris and the OSS community**.
+This is the **single most important finding for IRIS and the OSS community**.
 
 ### 3. DeepSeek-R1-Distill confirms ADR 0011's demotion
 Fails tool-calling on all short configs (LOST_FORMAT — keeps thinking, runs out of tokens). Surprisingly **passes long_ratio=1.0** — long context apparently shortens its reasoning preamble.
@@ -108,7 +108,7 @@ Re-running each model in a fresh `uv run` invocation completely defeats the `tur
 - Native tool-call conventions per model — Gemma's alt format hints this matters
 - Memory delta analysis (captured but not analyzed in depth)
 - Bit-width × buffer-ratio interaction (only K3/V2 tested)
-- iris-via-API path (still raw model)
+- IRIS-via-API path (still raw model)
 - Cross-hardware (Apple Silicon only)
 - Long-prompt baseline-failure follow-up — model-class level investigation
 

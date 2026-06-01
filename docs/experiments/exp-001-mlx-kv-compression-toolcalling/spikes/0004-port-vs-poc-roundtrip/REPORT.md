@@ -148,7 +148,7 @@ This reframes the next-step priorities:
 | Spike 0005 (yzamari port) will likely fix it | **Spike 0005 likely shows the same failure** — yzamari uses the same algorithm. May be partially mitigated by yzamari's `buffer_size` (keep recent tokens uncompressed) workaround. |
 | File upstream bug at rachittshah | **No bug to file** — implementation is correct |
 
-The honest assessment: **TurboQuant K4/V2 as a clean v0 axis is now in serious doubt.** Best-case if spike 0005 (yzamari) shows the same: TQ becomes a *measurement target* the benchmark exposes (highly valuable result), not a *deployment knob* iris adopts (deferred indefinitely).
+The honest assessment: **TurboQuant K4/V2 as a clean v0 axis is now in serious doubt.** Best-case if spike 0005 (yzamari) shows the same: TQ becomes a *measurement target* the benchmark exposes (highly valuable result), not a *deployment knob* IRIS adopts (deferred indefinitely).
 
 Plus the meta-result: in 5 spikes we've demonstrated the benchmark's core thesis on our own attempts to use someone else's optimization claim. The "novel angle" from ADR 0005 is no longer hypothetical — it has its first datapoint.
 

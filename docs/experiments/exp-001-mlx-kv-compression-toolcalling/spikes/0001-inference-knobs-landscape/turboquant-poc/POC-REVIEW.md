@@ -46,13 +46,13 @@ A clean **NumPy reference implementation** of the TurboQuant algorithm + a **qua
 
 IRIS_INTEGRATION.md says:
 
-> *"iris (Next.js / NestJS) ... iris's TS/Nest layer"*
+> *"IRIS (Next.js / NestJS) ... IRIS's TS/Nest layer"*
 
-But the actual iris repo I read is **Python 3.12 + FastAPI + LangChain/LangGraph + Poetry**, with a React frontend. There is no Next.js / NestJS layer in iris that I found. This suggests:
-- The POC's strategic narrative was generated against an incorrect/assumed iris stack
-- Most likely cause: the POC was generated in an isolated session without access to iris's actual repo
+But the actual IRIS repo I read is **Python 3.12 + FastAPI + LangChain/LangGraph + Poetry**, with a React frontend. There is no Next.js / NestJS layer in IRIS that I found. This suggests:
+- The POC's strategic narrative was generated against an incorrect/assumed IRIS stack
+- Most likely cause: the POC was generated in an isolated session without access to IRIS's actual repo
 - **The algorithm code itself is unaffected** — it's pure NumPy, framework-agnostic
-- **The integration recommendations need re-grounding** against iris's real Python stack before action
+- **The integration recommendations need re-grounding** against IRIS's real Python stack before action
 
 ## Impact on the agentic-evals plan
 

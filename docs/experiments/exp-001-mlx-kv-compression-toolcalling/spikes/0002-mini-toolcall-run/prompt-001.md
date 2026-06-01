@@ -1,7 +1,7 @@
 # Mini-spike prompt 001 — `web_search` invocation
 
 ## Test target
-Get the model to emit a structurally correct tool call to iris's `web_search` tool, given a user query that clearly requires it.
+Get the model to emit a structurally correct tool call to IRIS's `web_search` tool, given a user query that clearly requires it.
 
 ## Test prompt
 

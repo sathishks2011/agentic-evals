@@ -25,19 +25,19 @@ Same paper as `turboquant-google.md` — random rotation + Lloyd-Max + QJL proje
 - **Latency overhead:** +5.7% prefill, +3.1% decode on RTX 5090
 - **Quality:** cosine similarity 0.940 (2-bit V), 0.997 (4-bit V)
 
-## iris-relevance
+## IRIS-relevance
 
-**Low for iris's current stack.** iris is Apple Silicon + Ollama. Exercising this implementation requires:
+**Low for IRIS's current stack.** IRIS is Apple Silicon + Ollama. Exercising this implementation requires:
 - A separate NVIDIA box
 - vLLM stack
-- iris reconfigured to use vLLM for at least one tier — a deployment-shape change, not a config flip
+- IRIS reconfigured to use vLLM for at least one tier — a deployment-shape change, not a config flip
 
 Defer unless / until we build the federated multi-hardware leaderboard (ADR 0007's hardware-honesty path). Then this is the canonical NVIDIA-side TurboQuant reference.
 
 ## Blockers
 
-1. **No iris hardware match.** Requires NVIDIA GPU (RTX 3090+).
-2. **vLLM-only.** iris would need framework changes to consume the result.
+1. **No IRIS hardware match.** Requires NVIDIA GPU (RTX 3090+).
+2. **vLLM-only.** IRIS would need framework changes to consume the result.
 3. **MoE limitation** flagged in README — only full-attention layers compressed; linear-attention/Mamba layers skipped.
 4. **PyTorch 2.10 + CUDA 12.8** pinning; environment-brittle.
 

@@ -3,7 +3,7 @@
 - **Status:** Open / research in progress
 - **Started:** 2026-05-26
 - **Type:** Research only — no code, no installs, no measurements
-- **Why:** Per Rule 10. Before we pick a wedge or design any harness, we need ground truth on the optimization/quantization/decoding techniques the user wants the benchmark to eventually cover. The full list explodes the combinatorial matrix; the spike clarifies which techniques are real, runnable, and iris-relevant *today*.
+- **Why:** Per Rule 10. Before we pick a wedge or design any harness, we need ground truth on the optimization/quantization/decoding techniques the user wants the benchmark to eventually cover. The full list explodes the combinatorial matrix; the spike clarifies which techniques are real, runnable, and IRIS-relevant *today*.
 
 ## Goal
 
@@ -14,7 +14,7 @@ Produce **one short page per technique** that answers:
 3. **Frameworks that run it today** (concrete: Ollama / llama.cpp / MLX / vLLM / SGLang / exllamav2 / Transformers / other)
 4. **Hardware support** (NVIDIA / Apple Silicon / AMD / Intel — be specific about gaps)
 5. **What's measurable** (latency, throughput, memory, quality — and at what cost)
-6. **iris-relevance** (does iris's current stack support it? what would change?)
+6. **IRIS-relevance** (does IRIS's current stack support it? what would change?)
 7. **Blockers** (anything that makes benchmarking this hard or impossible today)
 8. **References** (papers, repos, blog posts, with links)
 
@@ -35,7 +35,7 @@ Produce **one short page per technique** that answers:
 | 4 | DFlash (block-diffusion speculative decoding) | [dflash.md](dflash.md) | Done |
 | 5 | Model distillation | [distillation.md](distillation.md) | Done |
 | 6 | oMLX (Mac MLX inference server — added 2026-05-26 after user research) | [omlx.md](omlx.md) | Done — framework candidate, not a quantization technique |
-| 7 | User-provided TurboQuant POC (NumPy reference + quality harness) | [turboquant-poc/POC-REVIEW.md](turboquant-poc/POC-REVIEW.md) | Reviewed 2026-05-27 — materially upgrades the TurboQuant axis; flagged iris-stack inconsistency in POC's integration brief |
+| 7 | User-provided TurboQuant POC (NumPy reference + quality harness) | [turboquant-poc/POC-REVIEW.md](turboquant-poc/POC-REVIEW.md) | Reviewed 2026-05-27 — materially upgrades the TurboQuant axis; flagged IRIS-stack inconsistency in POC's integration brief |
 
 ## Exit criteria
 

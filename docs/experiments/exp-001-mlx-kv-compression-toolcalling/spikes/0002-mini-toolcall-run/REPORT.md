@@ -31,7 +31,7 @@ Run 2 output:
 R1-Distill models are reasoning-tuned: they "think out loud" before answering. The model *was* about to emit the right JSON (the thought process shows it understood the task and was approaching the correct call). It just ran out of token budget before getting there.
 
 Implication: this model is **not a good first wedge target for tool-calling**. Either:
-- Use `Qwen-2.5-7B-Instruct` (iris's actual Tier 2 model — non-reasoning-tuned, will answer directly)
+- Use `Qwen-2.5-7B-Instruct` (IRIS's actual Tier 2 model — non-reasoning-tuned, will answer directly)
 - Or test R1-Distill with `max_tokens=600+` (also adds noise — reasoning preamble varies)
 - Or suppress reasoning via prompt (fragile)
 
@@ -79,7 +79,7 @@ This directly contradicts the [POC's](../0001-inference-knobs-landscape/turboqua
 - No correctness validation against the POC's NumPy reference (planned for spike 0003 — confirm rachittshah's port encode/decode matches POC math).
 - No comparison against yzamari/mlx-turboquant (deferred to spike 0004).
 - No analysis of *which layer* TurboQuant breaks first (skipped — would require instrumented model).
-- No iris-via-API tool-call test (intentionally — we tested via raw model, not iris's full agentic stack; that comes later).
+- No IRIS-via-API tool-call test (intentionally — we tested via raw model, not IRIS's full agentic stack; that comes later).
 
 ## Mini-spike conclusion
 

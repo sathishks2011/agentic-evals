@@ -1,0 +1,18 @@
+{
+  "run_id": "20260611T194418Z-ff90b2",
+  "created_utc": "2026-06-11T19:44:18.750225+00:00",
+  "spike": "0001-grammar-router",
+  "summary": {
+    "config": "llamacpp-3b:schema",
+    "cases": 77,
+    "accuracy": 0.6364,
+    "accuracy_by_class": {
+      "adversarial": 0.1429,
+      "ambiguous": 0.5,
+      "clear": 0.7167
+    },
+    "fallback_rate": 0.0,
+    "latency_p50_ms": 158.7,
+    "latency_p95_ms": 181.4
+  }
+}

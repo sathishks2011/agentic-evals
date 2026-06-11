@@ -1,0 +1,18 @@
+{
+  "run_id": "20260611T194553Z-c1f181",
+  "created_utc": "2026-06-11T19:45:53.307948+00:00",
+  "spike": "0001-grammar-router",
+  "summary": {
+    "config": "llamacpp-granite4:schema",
+    "cases": 77,
+    "accuracy": 0.7792,
+    "accuracy_by_class": {
+      "adversarial": 0.4286,
+      "ambiguous": 0.6,
+      "clear": 0.85
+    },
+    "fallback_rate": 0.0,
+    "latency_p50_ms": 170.3,
+    "latency_p95_ms": 188.3
+  }
+}
